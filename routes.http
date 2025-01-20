@@ -1,0 +1,26 @@
+POST http://localhost:3333/videos
+Content-Type: application/json
+
+{
+  "title" : "Video ",
+  "description": "descrição qualquer",
+  "duration": 180,
+  "views": 100
+}
+
+### 
+GET http://localhost:3333
+
+###
+PUT  http://localhost:3333/videos/dce834e9-f952-4a84-8ff1-792eb5e6e71d
+Content-Type: application/json
+
+{
+  "title" : "Video03Modificado",
+  "description": "descrição qualquer",
+  "duration": 180,
+  "views": 100
+}
+
+###
+DELETE http://localhost:3333/videos/61cdfd2d-9c84-40cf-9dc8-68854c7b3eb2
